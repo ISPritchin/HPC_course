@@ -3,6 +3,7 @@
 #include <time.h>
 #include "matrix_operations.h"
 
+
 int main(int argc, char* argv[]) {
     if (argc != 2) {
         fprintf(stderr, "Usage: %s <matrix size>\n", argv[0]);
@@ -18,8 +19,6 @@ int main(int argc, char* argv[]) {
     double* A = (double*)malloc(n * n * sizeof(double));
     double* x = (double*)malloc(n * sizeof(double));
     double* y = (double*)malloc(n * sizeof(double));
-
-    // Initialize matrix and vector with some values
 
     matrix_vector_multiply(A, x, n, y);
 
