@@ -1,9 +1,7 @@
 #ifndef MATRIX_OPERATIONS_H
 #define MATRIX_OPERATIONS_H
 
-extern "C" {
-    void matrix_multiply(double* A, double* B, int n, double* C);
-    void matrix_vector_multiply(double* A, double* x, int n, double* y);
-}
+void matrix_multiply(double* A, double* B, int n, double* C);
+void matrix_vector_multiply(double* A, double* x, int n, double* y);
 
 #endif
